@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  chat:
+    image: 'widmatg/cybr-chat-app-img:latest'
+    environment:
+      - "PORT:3700"
+    ports:
+      - "80:3700"
+    volumes:
+      - ./:/app
